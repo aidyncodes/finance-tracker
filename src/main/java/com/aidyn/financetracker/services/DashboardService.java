@@ -1,10 +1,10 @@
-package com.aidyn.services;
+package com.aidyn.financetracker.services;
 
 import java.time.LocalDate;
 //import org.springframework.stereotype.Service;
 
-import com.aidyn.repository.TransactionRepository;
-import com.aidyn.responses.PieChartResponse;
+import com.aidyn.financetracker.repository.TransactionRepository;
+import com.aidyn.financetracker.responses.PieChartResponse;
 
 public class DashboardService {
 

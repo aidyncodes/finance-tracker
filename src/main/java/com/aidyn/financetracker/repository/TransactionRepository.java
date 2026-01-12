@@ -1,4 +1,4 @@
-package com.aidyn.repository;
+package com.aidyn.financetracker.repository;
 
 import java.time.LocalDate;
 import java.util.List;

@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.aidyn.responses.PieChartResponse;
-import com.aidyn.services.DashboardService;
+import com.aidyn.financetracker.responses.PieChartResponse;
+import com.aidyn.financetracker.services.DashboardService;
 
 @RestController
 @RequestMapping("/api/dashboard") // NOTE:
