@@ -1,0 +1,2 @@
+Repository = database access (queries only)
+Service = business logic (interactions between data objects) and rules
