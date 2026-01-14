@@ -3,9 +3,12 @@ package com.aidyn.financetracker.services;
 import java.time.LocalDate;
 //import org.springframework.stereotype.Service;
 
+import org.springframework.stereotype.Service;
+
 import com.aidyn.financetracker.repository.TransactionRepository;
 import com.aidyn.financetracker.responses.PieChartResponse;
 
+@Service
 public class DashboardService {
 
     private final TransactionRepository transactionRepository;
@@ -28,7 +31,7 @@ public class DashboardService {
         var rows = transactionRepository.sumSpendingByCategory(username, start, end); // in TransactionRepository
 
         return new PieChartResponse( // PieChartResponse object takes lists
-            rows.stream().map(r -> r.category()).toList(), // stream() connected to TransactionRepository
+            rows.stream().map(r -> r.category()).toList(), 
             rows.stream().map(r -> r.total().doubleValue()).toList()
         );
     }

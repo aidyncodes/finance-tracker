@@ -1,0 +1,25 @@
+package com.aidyn.financetracker.models;
+
+public class User {
+    
+    private final String username;
+
+    private String firstName;
+    
+    private String lastName;
+        
+            public User(String username, String firstName, String lastName) {
+                this.username = username;
+                this.firstName = firstName;
+                this.lastName = lastName;
+    }
+
+    // add setters and ensure all are protected... cybersecurity aspect. 
+
+    String getUserId() { return username;}
+
+    String getFirstName() { return firstName;}
+
+    String getLastName() { return lastName;}
+
+}
