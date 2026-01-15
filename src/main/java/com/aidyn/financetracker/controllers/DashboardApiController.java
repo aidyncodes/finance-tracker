@@ -23,7 +23,9 @@ public class DashboardApiController {
 
     @GetMapping("/spend-by-category") // api endpoint link
     public PieChartResponse spendByCategory(
-        @RequestParam(defaultValue = "month") String range, 
+        @RequestParam
+        (defaultValue = "month") 
+        String range, 
         Principal principal
     ) {
         return dashboardService.getSpendByCategoryForRange(

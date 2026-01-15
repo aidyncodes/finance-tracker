@@ -1,5 +1,9 @@
 package com.aidyn.financetracker.models;
 
+import jakarta.persistence.Entity;
+
+// TESTING PERIOD: NOT IN USE. instead i store username on Transaction directly 
+@Entity
 public class User {
     
     private final String username;

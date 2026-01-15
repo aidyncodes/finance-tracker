@@ -18,5 +18,7 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
         LocalDate end
     );
 
-    // query here...........
+    // query here........... 
+    // select COUNT(amount) columns with category (param), 
+    // where between start/end dates - need to iterate through each date?
 }
