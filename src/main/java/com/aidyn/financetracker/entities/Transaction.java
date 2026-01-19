@@ -12,6 +12,7 @@ import jakarta.persistence.Table;
 
 // an entity represents one row in a table, something that can be saved or deleted, and has an ID (primary key)
 // treat this class similarly to ddl.sql (just automatic creation instead of manual)
+// have to upload manually into docker or does this automatically upload locally??
 @Entity
 @Table (name = "transactions") // initialize table in entity class used by jpa repo
 public class Transaction {
